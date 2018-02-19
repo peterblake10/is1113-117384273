@@ -20,3 +20,8 @@ a {
     display: inline-block;
     font-size: 35px;
 }
+
+.button1 {
+    font-size: 10px;
+    color:black;
+}

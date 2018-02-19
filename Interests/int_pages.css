@@ -1,16 +1,38 @@
-#section1{
-    background-color: rgb(238, 0, 90);
+#section1s{
+    background-image:url(http://sportinglimerick.com/wp-content/uploads/2017/11/Junior-Soccer-Stock-Image-627x376.jpeg);
+    background-size: cover;
 }
 
-#section2{
-    background-color: rgb(44, 62, 80);
+#section2s{
+    background-image:url(https://cdn.cnn.com/cnnnext/dam/assets/161202081345-chelsea-fc-corner-flag-exlarge-169.jpg);
+    background-size: cover;
 }
 
-#section3{
-    background-color: rgb(51, 153, 204);
+#section3s{
+    background-image:url(http://www.ebru.co.ke/wp-content/uploads/2018/02/hazard.jpg);
+    background-size: cover;
+}
+
+  #section1t{
+    background-image:url(http://www.globalblue.com/tax-free-shopping/spain/article641258.ece/alternates/LANDSCAPE2_970/Nativity-facade-of-Sagrada-Familia-cathedral-in-Barcelona-spain.jpg);
+    background-size: cover;
+}
+
+#section2t{
+    background-image:url(https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5232386545001_5215063851001-vs.jpg?pubId=5104226627001&videoId=5215063851001);
+    background-size: cover;
+}
+
+#section3t{
+    background-image:url(https://travel.usnews.com/static-travel/images/destinations/44/empire_state_building_getty_zsolt_hlinka.jpg);
+    background-size: cover;
 }
 
 .section{
     text-align: center;
     color: white;
+    
 }
+
+
+
