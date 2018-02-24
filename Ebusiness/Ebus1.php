@@ -2,13 +2,20 @@
     <head>
         <title> Select Product</title>
         <!--jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="cost_calc.js"></script>
+    <style>
+        body {
+            text-align:center;
+        }
+    </style>
+    
     </head>
+    
     
     <body>
         
-        <h4> Select Product </h4>
+        <h1> Select Product </h1>
         
         <br/>
         
@@ -51,12 +58,30 @@
             </label>
             
             <br/>
+            <br/>
+            
+            <label for="Discount">
+                Discount @ 5%
+                <input type="text" id="Discount" value="0.00" readonly/>
+            </label>
+            
+            <br/>
+            <br/>
+            
+            <label for="VAT">
+                VAT @ 10%
+                <input type="text" id="VAT" value="0.00" readonly/>
+            </label>
+            
+            <br/>
+            <br/>
             
             <label for="Total">
             Total
-            <input type="hidden" id="Total" name="total" value="0.00" readonly/>
+            <input type="text" id="Total" name="total" value="0.00" readonly/>
             </label>
             
+            <br/>
             <br/>
             <button type="submit" id="btnProceed" disabled>Add to shopping cart</button>
             
