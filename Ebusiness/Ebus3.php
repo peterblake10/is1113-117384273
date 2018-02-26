@@ -11,7 +11,22 @@ session_start();
         
         <?php
         //Echo session variables that were set on previous page
-        echo "Total is " . $_SESSION["total"] . ".";
+        echo "Subtotal: " . $_SESSION["Subtotal"] . ".";
+        ?>
+        <br>
+        <?php
+        //Echo session variables that were set on previous page
+        echo "Discount: " . $_SESSION["Discount"] . ".";
+        ?>
+        <br>
+        <?php
+        //Echo session variables that were set on previous page
+        echo "VAT: " . $_SESSION["VAT"] . ".";
+        ?>
+        <br>
+        <?php
+        //Echo session variables that were set on previous page
+        echo "Total: " . $_SESSION["Total"] . ".";
         ?>
     </body>
 </html>

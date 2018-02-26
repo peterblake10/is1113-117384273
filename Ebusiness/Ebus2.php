@@ -11,16 +11,28 @@ session_start();
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+           
+            
+            h2 {
+                text-align:center;
+            }
+            
+            body {
+                text-align:center;
+            }
+           
+        </style>
     </head>
     
     <body>
         
-        <h4>Please enter your payment details.</h4>
-        
+        <h2>Please enter your payment details.</h2>
+         
             <br />
             
             <form method = "POST" action = "Ebus3.php">
-            
+ <p>         
             <label for="name">
                     Name
                 </label>
@@ -64,10 +76,15 @@ session_start();
             
             <button onClick="validateDetails()"> Validate </button>
             
+            </p>
+            
             <script type="text/javascript" src="Ebus2_Validator.js"></script>
             
             <?php
             // set session variables
+            $_SESSION["Subtotal"] = $_POST["Subtotal"];
+            $_SESSION["Discount"] = $_POST["Discount"];
+            $_SESSION["VAT"] = $_POST["VAT"];
             $_SESSION["total"] = $_POST["total"];
             ?>
         

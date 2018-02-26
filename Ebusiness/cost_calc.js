@@ -16,13 +16,27 @@ function calcSub(){
     if (document.getElementById("gmail").checked) {
         argSubTotal = 400;
     }
-    display(argSubTotal);
+    calcDisVatTotal(argSubTotal);
+}
+function calcDisVatTotal(parmSubtotal) {
+    var Subtotal = parmSubtotal;
+    var discount;   
+    var vat;
+    var Total;
+    
+    discount =(parmSubtotal * .05);
+    vat =(parmSubtotal - discount) * (.1);
+    Total =(parmSubtotal + vat - discount);
+    
+    display(Subtotal, discount, vat, Total);
 }
 
-function display(parm1) {
+function display(parm1, parm2, parm3, parm4) {
     
     document.getElementById("Subtotal").value = parm1;
-    document.getElementById("Total").value = parm1;
+    document.getElementById("Discount").value = parm2;
+    document.getElementById("VAT").value = parm3;
+    document.getElementById("Total").value = parm4;
     
     enablebtnProceed();
 }
