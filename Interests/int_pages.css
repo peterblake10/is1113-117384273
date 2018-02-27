@@ -28,14 +28,34 @@
     background-size: cover;
 }
 
+
+#section1c{
+    background-image:url(http://marketingland.com/wp-content/ml-loads/2015/06/salesforce-logo-1920.jpg);
+    background-size:cover;
+}
+
+#section2c{
+    background-image:url(https://dqrt72khb0whk.cloudfront.net/uploads/image/file/6374/cropped_C9.jpg?ts=1484158046);
+    background-size:cover;
+}
+
+#section3c{
+    background-image:url(https://a0.awsstatic.com/main/images/logos/aws_logo_smile_1200x630.png);
+    background-size:cover;
+}
+
+#section4c{
+    background-image:url(https://img.purch.com/r/520x520/aHR0cDovL3d3dy50b3B0ZW5yZXZpZXdzLmNvbS9pL3BkcC80OTU4NTBlNjA2YjJiN2EzMDU5NDFhNWFlZjQ4NzI5OC5qcGc=);
+    background-size:cover;
+}
 .section{
     text-align: center;
-    color: white;
+    color: black;
     
 }
 p {
     text-align:center;
-    color:white;
+    color:black;
 }
 
 
