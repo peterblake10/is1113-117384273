@@ -54,7 +54,7 @@
             
             <label for="Subtotal">
                 Sub Total
-                <input type="text" id="Subtotal" value="0.00" readonly/>
+                <input type="text" id="Subtotal" name="Subtotal" value="0.00" readonly/>
             </label>
             
             <br/>
@@ -62,7 +62,7 @@
             
             <label for="Discount">
                 Discount @ 5%
-                <input type="text" id="Discount" value="0.00" readonly/>
+                <input type="text" id="Discount" name="Discount" value="0.00" readonly/>
             </label>
             
             <br/>
@@ -70,7 +70,7 @@
             
             <label for="VAT">
                 VAT @ 10%
-                <input type="text" id="VAT" value="0.00" readonly/>
+                <input type="text" id="VAT" name="VAT" value="0.00" readonly/>
             </label>
             
             <br/>
@@ -83,13 +83,18 @@
             
             <br/>
             <br/>
-            <button type="submit" id="btnProceed" disabled>Add to shopping cart</button>
             
+            <button type="submit" id="btnProceed" disabled>Add to shopping cart</button>
         </form>
         
         <br/>
         
         <button onClick="calcSub()">Calculate Cost</button>
         <a role="button" href="Ebus1.php">Clear Choice</a>
+        
+        <br/>
+        <br/>
+        
+        
     </body>
 </html>
