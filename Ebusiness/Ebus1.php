@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8"/>
         <title> Select Product</title>
         <!--jQuery-->
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -19,6 +21,8 @@
         
         <br/>
         
+        <!--Setting prices for each product-->
+        
         <form method="POST" action="Ebus2.php">
             
             <label for="salesforce">
@@ -28,7 +32,7 @@
             
             <br/>
             
-            <label for "aws">
+            <label for ="aws">
                 <input type="radio" id="aws" name="product" onClick="disablebtnProceed()"/>
                 Amazon Web Services @ $300
             </label>

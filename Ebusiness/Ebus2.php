@@ -3,9 +3,9 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        
+        <meta charset="utf-8"/>
         <title> Enter Details</title>
         
         
@@ -32,12 +32,14 @@ session_start();
             <br />
             
             <form method = "POST" action = "Ebus3.php">
- <p>         
+             
+            <!--Adding textboxes for user name, email and pin-->
+            
             <label for="name">
                     Name
                 </label>
                 
-                <input type="text" id="name" placeholder="Name" maxlength="20">
+                <input type="text" id="name" name="name" maxlength="20">
            
            <br/>
            <br/>
@@ -46,7 +48,7 @@ session_start();
                     Email Address
                 </label>
                 
-                <input type="text" id="email" placeholder="Email Address" maxlength="30">
+                <input type="text" id="email" name="email" maxlength="30">
                 
                 <br/>
                 <br/>
@@ -73,15 +75,16 @@ session_start();
             </form>
             
             <br />
-            
+        
             <button onClick="validateDetails()"> Validate </button>
             
-            </p>
+            
             
             <script type="text/javascript" src="Ebus2_Validator.js"></script>
             
             <?php
             // set session variables
+           
             $_SESSION["Subtotal"] = $_POST["Subtotal"];
             $_SESSION["Discount"] = $_POST["Discount"];
             $_SESSION["VAT"] = $_POST["VAT"];
