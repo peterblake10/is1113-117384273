@@ -36,6 +36,7 @@ session_start();
             <!--Adding textboxes for user name, email and pin-->
             
             <label for="name">
+                   
                     Name
                 </label>
                 
@@ -45,6 +46,7 @@ session_start();
            <br/>
            
              <label for="email">
+                    
                     Email Address
                 </label>
                 
@@ -54,6 +56,7 @@ session_start();
                 <br/>
                 
                 <label for="user_pin">
+                     
                      PIN 
                 </label>
                 
@@ -89,6 +92,8 @@ session_start();
             $_SESSION["Discount"] = $_POST["Discount"];
             $_SESSION["VAT"] = $_POST["VAT"];
             $_SESSION["total"] = $_POST["total"];
+            $_SESSION["name"] = $_POST["name"];
+            $_SESSION["email"] = $_POST["email"];
             ?>
         
         

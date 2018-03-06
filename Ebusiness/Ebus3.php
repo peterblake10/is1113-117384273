@@ -33,33 +33,33 @@ session_start();
         
         <?php
         //Echo session variables that were set on previous page
-        echo "Name: " . $_SESSION["name"] . ".<br>";
+        echo "Name: " . $_POST["name"] . "<br/>";
         
        
         
         //Echo session variables that were set on previous page
-        echo "Email Address: " . $_SESSION["email"] . ".<br>";
+        echo "Email Address: " . $_POST["email"] . "<br>";
      
        
         
         
         //Echo session variables that were set on previous page
-        echo "Subtotal: " . $_SESSION["Subtotal"] . ".<br>";
+        echo "Subtotal: " . $_SESSION["Subtotal"] . "<br>";
         
        
         
         //Echo session variables that were set on previous page
-        echo "Discount: " . $_SESSION["Discount"] . ".<br>";
+        echo "Discount: " . $_SESSION["Discount"] . "<br>";
         
        
         
         //Echo session variables that were set on previous page
-        echo "VAT: " . $_SESSION["VAT"] . ".<br>";
+        echo "VAT: " . $_SESSION["VAT"] . "<br>";
     
       
         
         //Echo session variables that were set on previous page
-        echo "Total: " . $_SESSION["total"] . ".<br>";
+        echo "Total: " . $_SESSION["total"] . "<br>";
         ?>
         
         <a href="../Interests/CloudServicesVendor/cloudhomepage.html" class="button">Home</a>
